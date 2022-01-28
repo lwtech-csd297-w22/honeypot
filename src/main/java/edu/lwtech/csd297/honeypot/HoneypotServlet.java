@@ -49,7 +49,6 @@ public class HoneypotServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-        // START THE TIMER AND LOG THE "IN" MESSAGE
 
         String htmlPage = "";
 
@@ -70,7 +69,6 @@ public class HoneypotServlet extends HttpServlet {
             logger.error("Unexpected IO Error sending response.", e);
         }
 
-        // STOP THE TIMER AND LOG THE "OUT" MESSAGE
     }
 
     // Allows ServletCommand handlers to access Freemarker
